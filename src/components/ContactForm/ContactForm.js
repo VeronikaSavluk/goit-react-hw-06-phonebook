@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
-import { addContact } from "redux/actions";
+import { addContact } from "redux/contactsSlice";
 
-import { nanoid } from 'nanoid';
-import {ErrorMessage, Formik} from 'formik';
-import * as yup from 'yup';
+import { nanoid } from "nanoid";
+import {ErrorMessage, Formik} from "formik";
+import * as yup from "yup";
 
-import { Wrapper, NameLable, Input, Error, SubitForm } from './ContactForm.styled';
+import { Wrapper, NameLable, Input, Error, SubitForm } from "./ContactForm.styled";
 
 const NameInputId = nanoid();
 const NumberInputId = nanoid();
