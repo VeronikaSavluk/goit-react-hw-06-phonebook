@@ -11,11 +11,6 @@ const filterSlice = createSlice({
                 state = action.payload;
                 return state;
             },
-            // prepare(value) {
-            //     return {
-            //         payload: value,
-            //     };
-            // },
         },
     },
 });
