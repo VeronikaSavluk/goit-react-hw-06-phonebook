@@ -14,7 +14,7 @@ const ContactList = () => {
 
     return (
         <List>
-            {visibleContacts.map(({id, name, number}) => (
+            {visibleContacts.map(({ id, name, number }) => (
                 <ContactItem key={id}>
                     <DataContact>{name}:</DataContact>
                     <DataContact>{number}</DataContact>
@@ -22,8 +22,8 @@ const ContactList = () => {
                 </ContactItem>
             ))}
         </List>
-    )
-}
+    );
+};
 
 ContactList.propTypes = {
     visibleContacts: PropTypes.arrayOf(
@@ -32,7 +32,7 @@ ContactList.propTypes = {
             number: PropTypes.string.isRequired,
             id: PropTypes.string,
         }),
-    )
-}
+    ),
+};
 
 export default ContactList;
